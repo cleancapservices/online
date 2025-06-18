@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Helmet Hygiene Service</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Helmet Hygiene Service</h1>
+    <p>We clean and sanitize your helmet professionally. Orders accepted only on <strong>Saturday</strong> and <strong>Sunday</strong>.</p>
+    
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="text" id="location" placeholder="Location" required />
+
+      <label for="helmetCount">Number of Helmets:</label>
+      <select id="helmetCount">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+		<label for="date">Select Date:</label>
+		<input type="date" id="date" required />
+
+      <p>Total Price: ₹<span id="totalPrice">69</span></p>
+
+      <button type="submit" id="payBtn">Place Order & Pay</button>
+    </form>
+
+    <p id="statusMessage"></p>
+  </div>
+
+  <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
+  <script src="script.js"></script>
+</body>
+</html>
