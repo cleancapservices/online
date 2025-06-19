@@ -21,7 +21,7 @@ document.getElementById('orderForm').addEventListener('submit', function (e) {
   };
 
 
-  fetch(''https://corsproxy.io/?https://script.google.com/macros/s/AKfycbzSZ_ZVMcY3ra6tzMsZA8IKhg7U5LIrxCiT6HpI_n-CwyEy8KpH52PKu66oS8CLpKg1/exec', {
+  fetch('https://corsproxy.io/?https://script.google.com/macros/s/AKfycbzSZ_ZVMcY3ra6tzMsZA8IKhg7U5LIrxCiT6HpI_n-CwyEy8KpH52PKu66oS8CLpKg1/exec', {
 	  
     method: 'POST',
     body: JSON.stringify(orderData),
