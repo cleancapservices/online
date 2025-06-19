@@ -4,11 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CleanCap Doorstep</title>
+  <!-- <style> -->
+    <!-- body { -->
+      <!-- font-family: Arial, sans-serif; -->
+      <!-- margin: 0; -->
+      <!-- padding: 0; -->
+      <!-- background: #ffffff; -->
+      <!-- color: #222; -->
+    <!-- } -->
+    <!-- header { -->
+      <!-- background-color: #1f4ed8; -->
+      <!-- color: white; -->
+      <!-- text-align: center; -->
+      <!-- padding: 40px 20px; -->
+    <!-- } -->
+    <!-- header h1 { -->
+      <!-- margin-bottom: 10px; -->
+      <!-- font-size: 2em; -->
+    <!-- } -->
+    <!-- .cta-button { -->
+      <!-- background-color: white; -->
+      <!-- color: #1f4ed8; -->
+      <!-- border: 2px solid #1f4ed8; -->
+      <!-- padding: 10px 20px; -->
+      <!-- border-radius: 8px; -->
+      <!-- text-decoration: none; -->
+      <!-- font-weight: bold; -->
+    <!-- } -->
+    <!-- .section { -->
+      <!-- padding: 40px 20px; -->
+      <!-- text-align: center; -->
+    <!-- } -->
+    <!-- .section h2 { -->
+      <!-- margin-bottom: 20px; -->
+    <!-- } -->
+    <!-- .icons { -->
+      <!-- display: flex; -->
+      <!-- justify-content: center; -->
+      <!-- gap: 30px; -->
+      <!-- flex-wrap: wrap; -->
+    <!-- } -->
+    <!-- .icon-box { -->
+      <!-- max-width: 120px; -->
+    <!-- } -->
+    <!-- .services-box { -->
+      <!-- background: #e0e7ff; -->
+      <!-- margin: 0 auto; -->
+      <!-- max-width: 400px; -->
+      <!-- border-radius: 10px; -->
+      <!-- padding: 20px; -->
+      <!-- text-align: left; -->
+    <!-- } -->
+    <!-- .services-box ul { -->
+      <!-- list-style-type: disc; -->
+      <!-- padding-left: 20px; -->
+    <!-- } -->
+    <!-- .form-section { -->
+      <!-- background: #f9f9f9; -->
+      <!-- padding: 40px 20px; -->
+    <!-- } -->
+    <!-- .form-section form { -->
+      <!-- max-width: 400px; -->
+      <!-- margin: 0 auto; -->
+      <!-- display: flex; -->
+      <!-- flex-direction: column; -->
+      <!-- gap: 10px; -->
+    <!-- } -->
+    <!-- .form-section input, .form-section select, .form-section button { -->
+      <!-- padding: 10px; -->
+      <!-- border-radius: 5px; -->
+      <!-- border: 1px solid #ccc; -->
+      <!-- font-size: 16px; -->
+    <!-- } -->
+    <!-- .form-section button { -->
+      <!-- background-color: #1f4ed8; -->
+      <!-- color: white; -->
+      <!-- border: none; -->
+      <!-- cursor: pointer; -->
+    <!-- } -->
+    <!-- footer { -->
+      <!-- background-color: #1f4ed8; -->
+      <!-- color: white; -->
+      <!-- text-align: center; -->
+      <!-- padding: 20px; -->
+    <!-- } -->
+  <!-- </style> -->
 </head>
 <body>
   <header>
     <h1>Fresh Helmet. Fresh Ride. Doorstep Service.</h1>
-    <a class="cta-button" href="#booking">Book Now @69 each</a>
+    <a class="cta-button" href="#booking">Book Now</a>
 	<link rel="stylesheet" href="style.css"/>
   </header>
 
@@ -49,11 +134,44 @@
     </div>
   </section>
 
-<iframe id="booking" src="https://docs.google.com/forms/d/e/1FAIpQLSeRvI-ew_1Y2oFzmcYrlK_Ft8hx4OD0DrWibfYBHr8AdUsIag/viewform?usp=header" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  <section class="form-section" id="booking">
+    <h2>Book Your Cleaning</h2>
+	<div class="container">
+    
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="tel" id="phone" placeholder="Phone Number" required />
+      <input type="text" id="location" placeholder="Google Location " required />
 
+      <label for="helmetCount">Number of Helmets:</label>
+      <select id="helmetCount">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+
+		<label for="date">Select Date:</label>
+		<input type="date" id="date" required />
+
+      <button type="submit" id="payBtn">Place Order & Pay</button>
+	      <p id="statusMessage"></p>
+    </form>
+
+    <p id="statusMessage"></p>
+  </div>
+  <script src="script.js"></script>
+ </section>
   <footer>
     <p>&copy; 2025 CleanCap Doorstep. All rights reserved.</p>
   </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
