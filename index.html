@@ -1,48 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Helmet Hygiene Service</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanCap Doorstep</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Helmet Hygiene Service</h1>
-    <p>We clean and sanitize your helmet professionally. Orders accepted only on <strong>Saturday</strong> and <strong>Sunday</strong>.</p>
-    
-    <form id="orderForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Email" required />
-      <input type="tel" id="phone" placeholder="Phone Number" required />
-      <input type="text" id="location" placeholder="Location" required />
+  <header>
+    <h1>Fresh Helmet. Fresh Ride. Doorstep Service.</h1>
+    <a class="cta-button" href="#booking">Book Now @69 each</a>
+	<link rel="stylesheet" href="style.css"/>
+  </header>
 
-      <label for="helmetCount">Number of Helmets:</label>
-      <select id="helmetCount">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
+  <section class="section">
+    <h2>How It Works</h2>
+    <div class="icons">
+      <div class="icon-box">
+        <img src="https://img.icons8.com/ios/100/000000/online-store.png" width="60" alt="Book Online">
+        <p>Book Online</p>
+      </div>
+      <div class="icon-box">
+        <img src="https://img.icons8.com/ios-filled/100/scooter.png" width="60" alt="We Pick Up">
+        <p>We Pick Up</p>
+      </div>
+      <div class="icon-box">
+        <img src="https://img.icons8.com/ios/100/000000/motorbike-helmet.png" width="60" alt="We Clean">
+        <p>We Clean</p>
+      </div>
+      <div class="icon-box">
+        <img src="https://img.icons8.com/ios/100/000000/home.png" width="60" alt="We Deliver">
+        <p>Deliver</p>
+      </div>
+    </div>
+  </section>
 
-		<label for="date">Select Date:</label>
-		<input type="date" id="date" required />
+  <section class="section">
+    <h2>Hygiene Clean - ₹69</h2>
+    <div class="services-box">
+      <ul>
+        <li>Dust Removal</li>
+        <li>UV projection</li>
+        <li>Germs and Bacteria killing</li>
+        <li>Deodorizing</li>
+		<li>Fresh Fragence</li>
+		<li>Thermal heating</li>
+		<li>Vysor and external cleaning</li>
+      </ul>
+    </div>
+  </section>
 
-      <p>Total Price: ₹<span id="totalPrice">69</span></p>
 
-      <button type="submit" id="payBtn">Place Order & Pay</button>
-    </form>
+  <!-- <section class="form-section" id="booking"> -->
+    <!-- <h2>Book Your Cleaning</h2> -->
+  <!-- <div class="container"> -->
 
-    <p id="statusMessage"></p>
-  </div>
+    <!-- <form id="orderForm"> -->
+      <!-- <input type="text" id="name" placeholder="Your Name" required /> -->
+      <!-- <input type="email" id="email" placeholder="Email" required /> -->
+      <!-- <input type="tel" id="phone" placeholder="Phone Number" required /> -->
+      <!-- <input type="text" id="location" placeholder="Google Location " required /> -->
 
-  <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
-  <script src="script.js"></script>
+      <!-- <label for="helmetCount">Number of Helmets:</label> -->
+      <!-- <select id="helmetCount"> -->
+        <!-- <option value="1">1</option> -->
+        <!-- <option value="2">2</option> -->
+        <!-- <option value="3">3</option> -->
+        <!-- <option value="4">4</option> -->
+        <!-- <option value="5">5</option> -->
+        <!-- <option value="6">6</option> -->
+        <!-- <option value="7">7</option> -->
+        <!-- <option value="8">8</option> -->
+        <!-- <option value="9">9</option> -->
+        <!-- <option value="10">10</option> -->
+      <!-- </select> -->
+
+		<!-- <label for="date">Select Date:</label> -->
+		<!-- <input type="date" id="date" required /> -->
+
+      <!-- <button type="submit" id="payBtn">Place Order & Pay</button> -->
+    <!-- </form> -->
+
+    <!-- <p id="statusMessage"></p> -->
+  <!-- </div> -->
+  <!-- <script src="script.js"></script> -->
+ </section>
+ 
+
+<iframe id="booking" src="https://docs.google.com/forms/d/e/1FAIpQLSeRvI-ew_1Y2oFzmcYrlK_Ft8hx4OD0DrWibfYBHr8AdUsIag/viewform?usp=header" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+ 
+ 
+  <footer>
+    <p>&copy; 2025 CleanCap Doorstep. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
