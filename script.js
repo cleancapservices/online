@@ -27,7 +27,7 @@ formData.append("phone", phone);
 formData.append("location", location);
 formData.append("helmetCount", helmetCount);
 formData.append("date", date);
-  
+
 fetch('https://script.google.com/macros/s/AKfycbxThSwbnQcCXyzlaJ4FkreoRtJObud1cdZL9D-Dwl_AIZBOa5DN7LgDqWxBy2aCvhcI/exec', {
   method: 'POST',
   body: formData
