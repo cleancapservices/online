@@ -20,20 +20,18 @@ document.getElementById('orderForm').addEventListener('submit', function (e) {
     date: dateInput.value
   };
 
-  fetch('https://script.google.com/macros/s/AKfycbxThSwbnQcCXyzlaJ4FkreoRtJObud1cdZL9D-Dwl_AIZBOa5DN7LgDqWxBy2aCvhcI/exec', {
-    method: 'POST',
-    body: JSON.stringify(orderData),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(res => res.text())
-  .then(response => {
-    document.getElementById('statusMessage').innerText = "Order saved successfully!";
-    document.getElementById('orderForm').reset();
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    document.getElementById('statusMessage').innerText = "Failed to save order.";
-  });
+  
+fetch('https://script.google.com/macros/s/AKfycbxThSwbnQcCXyzlaJ4FkreoRtJObud1cdZL9D-Dwl_AIZBOa5DN7LgDqWxBy2aCvhcI/exec', {
+  method: 'POST',
+  body: formData
+})
+.then(res => res.text())
+.then(response => {
+  document.getElementById('statusMessage').innerText = "Order saved!";
+})
+.catch(error => {
+  console.error('Error:', error);
+  document.getElementById('statusMessage').innerText = "Failed to save order.";
+});
+
 });
